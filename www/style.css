@@ -1,0 +1,40 @@
+/* CSS Document */
+
+body {
+	font: 300 12px 'Roboto',sans-serif;
+	background-image: url(bg.png);
+	background-repeat: repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	text-align:center;
+}
+#container {
+	width:990px;
+	margin:auto;
+	text-align:left;	
+}
+#header {
+	height:65px;	
+}
+#logo {
+	padding-top:15px;	
+}
+#content {
+	text-align:center;
+}
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #dddddd;
+}
+h1 {
+	color: #0a336d;
+	font-size:24px;
+	font-weight: bold;
+	padding:12px 0 26px 0;
+	margin:0;
+	
+}
