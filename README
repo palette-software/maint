@@ -1,1 +1,18 @@
 git repository: maint
+
+http://www.apachehaus.com/downloads/httpd-2.4.7-x86.zip
+
+The ApacheHaus binaries are built with VC9 - so run more generally.
+
+extract the zip file into the top-level of the maint repo
+
+mv Apache24/htdocs Apache24/_htdocs
+mkdir Apache24/htdocs
+
+
+bash:
+TOPDIR=`pwd` ./Apache24/bin/httpd.exe -f ../conf/httpd.conf
+
+cmd.exe:
+set TOPDIR=%cd% && Apache24\bin\httpd.exe -f ..\conf\httpd.conf
+
