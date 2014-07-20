@@ -7,11 +7,12 @@ The ApacheHaus binaries are built with VC9 - so run more generally.
 From the top-level directory of this repo i.e. the one containing this README:
 
 bash:
-TOPDIR=`pwd` ./apache2/bin/httpd.exe -f ../conf/httpd.conf
+INSTALLDIR=`pwd` DATADIR=`pwd` LISTEN_PORT=8889 ./apache2/bin/httpd.exe -f /path/to/conf/httpd.conf
 
 cmd.exe:
-set TOPDIR=%cd% && apache2 \bin\httpd.exe -f ..\conf\httpd.conf
+set INSTALLDIR=%cd% && set DATADIR=%cd% && set LISTEN_PORT=8889 && apache2 \bin\httpd.exe -f drive:\path\to\conf\httpd.conf
 
+NOTE: in both cases specify the full path to the conf file (or have the shell do so)
 
 --- old setup --
 
