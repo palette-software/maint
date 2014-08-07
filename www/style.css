@@ -1,40 +1,66 @@
 /* CSS Document */
 
-body {
-	font: 300 12px 'Roboto',sans-serif;
-	background-image: url(bg.png);
-	background-repeat: repeat-x;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	text-align:center;
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2b4065");
+
+@font-face {font-family: 'Proxima Nova Light';src: url('/fonts/webfonts/2B4065_8_0.eot');src: url('fonts/webfonts/2B4065_8_0.eot?#iefix') format('embedded-opentype'),url('fonts/webfonts/2B4065_8_0.woff') format('woff'),url('fonts/webfonts/2B4065_8_0.ttf') format('truetype');}
+
+@font-face {font-family: 'Proxima Nova Semibold';src: url('webfonts/2B4065_9_0.eot');src: url('webfonts/2B4065_9_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2B4065_9_0.woff') format('woff'),url('webfonts/2B4065_9_0.ttf') format('truetype');}
+
+@font-face {font-family: 'Proxima Nova Regular';src: url('fonts/webfonts/2B4065_A_0.eot');src: url('fonts/webfonts/2B4065_A_0.eot?#iefix') format('embedded-opentype'),url('fonts/webfonts/2B4065_A_0.woff') format('woff'),url('fonts/webfonts/2B4065_A_0.ttf') format('truetype');}
+
+
+
+html,body {
+  font-family:"Proxima Nova regular",Helvetica,Arial,sans-serif;
+  background-image: url(bg.png);
+  background-repeat: repeat-x;
+  padding: 0;
+  margin: 0;
+  text-align:center;
+  height:100%;
+  color:#4F545A;
 }
 #container {
-	width:990px;
-	margin:auto;
-	text-align:left;	
-}
-#header {
-	height:65px;	
-}
-#logo {
-	padding-top:15px;	
+  width:990px;
+  margin:auto;
+  text-align:left;
+  background-color: #fff;
 }
 #content {
-	text-align:center;
-}
-hr {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 0;
-	border-top: 1px solid #dddddd;
+  text-align:center;
 }
 h1 {
-	color: #0a336d;
-	font-size:24px;
-	font-weight: bold;
-	padding:12px 0 26px 0;
-	margin:0;
-	
+  font-size:30px;
+  font-family:"Proxima Nova semibold",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  padding:12px 0 26px 0;
+  margin:0;
+  letter-spacing: 1px;
 }
+h2 {
+  font-size: 24px;
+  color: #697078;
+}
+.container-fluid {
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+.row-fluid {
+  height: 100%;
+  display:table-cell;
+  vertical-align: middle;
+}
+.centering {
+  float:none;
+  margin:0 auto;
+}
+.text-center {
+  text-align:center;
+}
+.logo {
+  padding-bottom: 45px;
+}
+
