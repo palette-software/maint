@@ -4,6 +4,8 @@ http://www.apachehaus.com/downloads/httpd-2.4.7-x86.zip
 
 The ApacheHaus binaries are built with VC9 - so run more generally.
 
+Step 1: generate env.conf or copy from the 'build' directory of agent.
+
 From the top-level directory of this repo i.e. the one containing this README:
 
 bash:
