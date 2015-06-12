@@ -1,0 +1,11 @@
+Upgrading apache2
+-----------------
+- download new version, unzip to a tmp location, navigate to the directory.
+rm *.txt
+rm -rf cgi-bin htdocs icons include lib logs tools
+- decide whether or not to keep conf/mime.types
+rm -rf conf
+
+- in the maint repo:
+rm -rf bin modules
+- copy the new version here.
