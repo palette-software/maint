@@ -9,24 +9,16 @@ Step 1: generate env.conf or copy from the 'build' directory of agent.
 From the top-level directory of this repo i.e. the one containing this README:
 
 bash:
-INSTALLDIR=`pwd` DATADIR=`pwd` LISTEN_PORT=8889 ./apache2/bin/httpd.exe -f /path/to/conf/httpd.conf
+./apache2/bin/httpd.exe -f /path/to/conf/httpd.conf
 
 cmd.exe:
-set INSTALLDIR=%cd% && set DATADIR=%cd% && set LISTEN_PORT=8889 && apache2 \bin\httpd.exe -f drive:\path\to\conf\httpd.conf
+apache2 \bin\httpd.exe -f drive:\path\to\conf\httpd.conf
 
 NOTE: in both cases specify the full path to the conf file (or have the shell do so)
 
---- old setup --
-
-extract the zip file into the top-level of the maint repo
-
-mv Apache24/htdocs Apache24/_htdocs
-mkdir Apache24/htdocs
-
-
-bash:
-TOPDIR=`pwd` ./Apache24/bin/httpd.exe -f ../conf/httpd.conf
-
-cmd.exe:
-set TOPDIR=%cd% && Apache24\bin\httpd.exe -f ..\conf\httpd.conf
-
+DEBUGGING LOCAL NETWORK ON WINDOWS
+----------------------------------
+- window 1 (as admin)
+RawCap.exe -f 127.0.0.1 dumpfile.pcap
+- window 2
+tail -c +0 -f dumpfile.pcap | /c/Program\ Files/Wireshark/Wireshark.exe -k -i -
